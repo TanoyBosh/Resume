@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Professional Resume</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    /* Enhanced color palette and typography */
+    :root {
+        --primary-color: #2c3e50;
+        --secondary-color: #3498db;
+        --background-color: #f4f6f7;
+        --text-color: #2c3e50;
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: var(--background-color);
+        line-height: 1.6;
+        color: var(--text-color);
+        margin: 0;
+        padding: 20px;
+    }
+
+    .resume-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .profile-header {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .profile-header img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border: 5px solid var(--secondary-color);
+    }
+
+    .skills-section {
+        background-color: #f9f9f9;
+        padding: 20px;
+    }
+
+    .skill-bar {
+        background-color: #e0e0e0;
+        border-radius: 10px;
+        margin: 10px 0;
+        overflow: hidden;
+    }
+
+    .skill-bar-fill {
+        background-color: var(--secondary-color);
+        height: 10px;
+        transition: width 0.5s ease-in-out;
+    }
+
+    .section-title {
+        color: var(--primary-color);
+        border-bottom: 2px solid var(--secondary-color);
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .experience-card, .education-card {
+        margin-bottom: 20px;
+        padding: 15px;
+        border-left: 4px solid var(--secondary-color);
+    }
+
+    @media (max-width: 768px) {
+        .resume-grid {
+            display: block;
+        }
+    }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<body>
+    <div class="resume-container">
+        <div class="profile-header">
+            <img src="/w3images/avatar_hat.jpg" alt="Profile Picture">
+            <h1>Jane Doe</h1>
+            <p>Creative Designer & Web Developer</p>
+        </div>
+
+        <div class="resume-grid" style="display: flex; padding: 20px;">
+            <div style="width: 35%; padding-right: 20px;">
+                <div class="contact-info">
+                    <h2 class="section-title">Contact</h2>
+                    <p><i class="fas fa-envelope"></i> ex@mail.com</p>
+                    <p><i class="fas fa-phone"></i> 1224435534</p>
+                    <p><i class="fas fa-map-marker-alt"></i> London, UK</p>
+                </div>
+
+                <div class="skills-section">
+                    <h2 class="section-title">Skills</h2>
+                    <div>
+                        <p>Adobe Photoshop</p>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="width: 90%"></div>
+                        </div>
+                        <p>Photography</p>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="width: 80%"></div>
+                        </div>
+                        <p>Illustrator</p>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="width: 65%;">
+                <div class="experience-section">
+                    <h2 class="section-title">Work Experience</h2>
+                    <div class="experience-card">
+                        <h3>Front End Developer</h3>
+                        <p>w3schools.com | Jan 2015 - Present</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="experience-card">
+                        <h3>Web Developer</h3>
+                        <p>something.com | Mar 2012 - Dec 2014</p>
+                        <p>Praesentium magnam consectetur vel in deserunt aspernatur.</p>
+                    </div>
+                </div>
+
+                <div class="education-section">
+                    <h2 class="section-title">Education</h2>
+                    <div class="education-card">
+                        <h3>London Business School</h3>
+                        <p>Master's Degree | 2013 - 2015</p>
+                    </div>
+                    <div class="education-card">
+                        <h3>School of Coding</h3>
+                        <p>Bachelor's Degree | 2010 - 2013</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
