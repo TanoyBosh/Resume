@@ -76,13 +76,16 @@
         border-left: 4px solid var(--secondary-color);
     }
     
-    .footer{
-        position: center;
-    }
+footer {
+  display: flex;
+  justify-content: center; /* Aligns items to the right */
+  padding: 10px;
+}
 
     @media (max-width: 768px) {
         .resume-grid {
             display: block;
+            padding: 0;
         }
     }
 </style>
@@ -91,16 +94,16 @@
     <div class="resume-container">
         <div class="profile-header">
             <h1>Tanoy Bosh</h1>
-            <p>Developer</p>
+            <p>Programmer | Developer</p>
         </div>
 
         <div class="resume-grid" style="display: flex; padding: 20px;">
             <div style="width: 35%; padding-right: 20px;">
                 <div class="contact-info">
                     <h2 class="section-title">Contact</h2>
-                    <p><i class="fas fa-envelope"></i>  tanoy.cal@gmail.com</p>
-                    <p><i class="fas fa-phone"></i>  +91 8910769043</p>
-                    <p><i class="fas fa-map-marker-alt"></i>  Kolkata, India.</p>
+                    <p><i class="fas fa-envelope"></i> tanoy.cal@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91 8910769043</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Kolkata, India.</p>
                 </div>
 
                 <div class="skills-section">
@@ -126,17 +129,36 @@
                         <div class="skill-bar">
                             <div class="skill-bar-fill" style="width: 50%"></div>
                         </div>
-                        <p>DSA</p>
-                        <div class="skill-bar">
-                            <div class="skill-bar-fill" style="width: 90%"></div>
-                        </div>
                         <p>MERN</p>
                         <div class="skill-bar">
-                            <div class="skill-bar-fill" style="width: 80%"></div>
+                            <div class="skill-bar-fill" style="width: 70%"></div>
                         </div>
 
                     </div>
                 </div>
+
+                <div class="skills-section">
+                    <h2 class="section-title">Languages</h2>
+                    <div>
+                        <p>English</p>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Hindi</p>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Bengali</p>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div> 
+
             </div>
 
             <div style="width: 65%;">
