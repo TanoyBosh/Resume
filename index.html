@@ -84,7 +84,12 @@ footer {
 
 @media (max-width: 768px) {
         .resume-grid {
-            display: block;
+            flex-direction: column; /* Stack the columns vertically */
+        }
+
+        .resume-grid > div {
+            width: 100%; /* Make columns take full width */
+            margin-bottom: 20px; /* Add spacing between sections */
         }
 
         .profile-header img {
@@ -110,11 +115,6 @@ footer {
 
         .experience-card h3, .education-card h3 {
             font-size: 16px;
-        }
-
-        .resume-grid > div {
-            width: 100%;
-            padding: 0;
         }
     }
 </style>
