@@ -82,9 +82,38 @@ footer {
   padding: 10px;
 }
 
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
         .resume-grid {
             display: block;
+        }
+
+        .profile-header img {
+            width: 120px;
+            height: 120px;
+        }
+
+        .contact-info, .skills-section, .education-section, .experience-section {
+            padding: 10px;
+        }
+
+        .skill-bar {
+            height: 8px;
+        }
+
+        .resume-container {
+            margin: 10px;
+        }
+
+        .section-title {
+            font-size: 18px;
+        }
+
+        .experience-card h3, .education-card h3 {
+            font-size: 16px;
+        }
+
+        .resume-grid > div {
+            width: 100%;
             padding: 0;
         }
     }
