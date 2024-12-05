@@ -37,14 +37,6 @@
         text-align: center;
     }
 
-    .profile-header img {
-        border-radius: 50%;
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        border: 5px solid var(--secondary-color);
-    }
-
     .skills-section {
         background-color: #f9f9f9;
         padding: 20px;
@@ -75,6 +67,12 @@
         padding-left: 10px;
         border-left: 4px solid var(--secondary-color);
     }
+    .left{
+        width: 35%;
+    }
+    .right{
+        width: 65%;
+    }
     
 footer {
   display: flex;
@@ -83,6 +81,12 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
         .resume-grid {
             flex-direction: column; /* Stack the columns vertically */
         }
@@ -127,7 +131,7 @@ footer {
         </div>
 
         <div class="resume-grid" style="display: flex; padding: 20px;">
-            <div style="width: 35%; padding-right: 20px;">
+            <div class="left" style="padding-right: 20px;">
                 <div class="contact-info">
                     <h2 class="section-title">Contact</h2>
                     <p><i class="fas fa-envelope"></i> tanoy.cal@gmail.com</p>
@@ -190,7 +194,7 @@ footer {
 
             </div>
 
-            <div style="width: 65%;">
+            <div class="right">
                 <div class="experience-section">
                     <h2 class="section-title">Experience</h2>
                     <div class="experience-card">
