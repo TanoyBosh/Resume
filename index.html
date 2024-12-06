@@ -74,6 +74,48 @@
         border-left: 4px solid var(--secondary-color);
     }
 
+   /* Default color for the LinkedIn link and icon */
+.linkedin-link {
+    color: #0077b5; /* LinkedIn blue for text */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for text */
+}
+
+.linkedin-link i {
+    color: inherit; /* Inherit the text color for the icon */
+    transition: color 0.3s ease; /* Smooth transition for icon */
+}
+
+/* Change color on hover for both the text and icon */
+.linkedin-link:hover {
+    color: #005582; /* Darker blue for text */
+}
+
+.linkedin-link:hover i {
+    color: inherit; /* Icon color follows the text color on hover */
+}
+
+/* Default color for the GitHub link and icon */
+.github-link {
+    color: #333; /* Default color for GitHub text (dark gray) */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for text */
+}
+
+.github-link i {
+    color: inherit; /* Inherit the text color for the icon */
+    transition: color 0.3s ease; /* Smooth transition for icon */
+}
+
+/* Change color on hover for both the text and icon */
+.github-link:hover {
+    color: #24292f; /* Darker color for text on hover */
+}
+
+.github-link:hover i {
+    color: inherit; /* Icon color follows the text color on hover */
+}
+
     .left{
         width: 35%;
     }
@@ -116,6 +158,12 @@
                     <p><i class="fas fa-envelope"></i> tanoy.cal@gmail.com</p>
                     <p><i class="fas fa-phone"></i> +91 8910769043</p>
                     <p><i class="fas fa-map-marker-alt"></i> Kolkata, India.</p>
+                    <p><a href="https://github.com/TanoyBosh" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a></p>  
+                    <p><a href="https://linkedin.com/in/tanoy-bosh/" target="_blank" class="linkedin-link">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a></p>                                    
                 </div>
 
                 <div class="skills-section">
